@@ -90,15 +90,15 @@ async def m_grp(client, message):
     links = []
     link = await client.ask(message.chat.id ,"send me your pm search grp link or send /skiplink to skip , default is Hub_files")
     if link.text == "/skiplink":
-        links.append("https://t.me/M_HUpdate")
+        links.append("https://t.me/Movies_guru_official")
     else:
         if checkIfLinkIsValid(link.text):
             links.append(link.text)
         else:
             await message.reply("Invalid link")
-    link1 = await client.ask(message.chat.id ,"send me your movies grp link or send /skiplink to skip . default is Hub_files")
+    link1 = await client.ask(message.chat.id ,"send me your movies grp link or send /skiplink to skip . default is Movieguru_files")
     if link1.text == "/skiplink":
-        links.append("https://t.me/M_HUpdate")
+        links.append("https://t.me/Movies_guru_official")
     else:
         if checkIfLinkIsValid(link1.text):
             links.append(link1.text)
